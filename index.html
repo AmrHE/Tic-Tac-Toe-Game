@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    
+    <body>
+        <h1>Tic-Tac-Toe</h1>
+        <div id="scoreboard"></div>
+
+
+        <div class="play-mode">
+            <button class="single">Play Against The Computer</button>
+            <br>
+            <button class="multi">Play With Your Friend</button>
+        </div>
+
+        <div id="playertype">
+            <div id="difficulty">
+                Choose The  Difficulty Level
+            </div>
+            <div>
+                <input type="button" id="pvc-easy" value="Dumb-AI">
+            </div>
+            <div>
+                <input type="submit" id="pvc-unbeatable" value="Smart-AI">
+            </div>
+        </div>
+
+        <form>
+            <div class="players">
+                <label  for="player 1">
+                    Player One 
+                    <br>
+                    <input type="text" id='player1' required placeholder="Your Name!"> 
+                </label>
+                <br>
+
+                <div class="player2">
+                    <label  for="player 2">
+                        Player Two 
+                        <br>
+                        <input type="text" id='player2' required placeholder="Friend's Name!">
+                    </label>
+                </div> 
+                <button type="submit" class="startGame" value="Start Game"> Start Game</button>
+            </div>
+        </form>
+
+        <div id="score">
+            <div id="player1-name"></div>
+            <div id="player2-name"></div>
+            <div id="score-overview"></div>
+
+            <button class="newGame" onclick="gameFlow.newGame()">New Round</button>
+            <button class="reset" onclick="location.reload()">Reset Game</button>
+        </div>
+
+        <div class="grid-container">
+            <div class="menu">
+              <div class="q" id="1"></div>
+              <div class="q" id="2"></div>
+              <div class="q" id="3"></div>
+      
+              <div class="q" id="4"></div>
+              <div class="q" id="5"></div>
+              <div class="q" id="6"></div>
+      
+              <div class="q" id="7"></div>
+              <div class="q" id="8"></div>
+              <div class="q" id="9"></div>
+            </div>
+          </div>
+
+          <footer>
+              Made by <a href="https://github.com/AmrHE">Amr Hassan</a>
+          </footer>
+
+          <script src="script.js"></script>
+    </body>
+</html>
